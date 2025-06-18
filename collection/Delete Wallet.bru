@@ -1,0 +1,19 @@
+meta {
+  name: Delete Wallet
+  type: http
+  seq: 2
+}
+
+delete {
+  url: http://localhost:8080/wallets/8554d03c-27fd-4de4-942d-6b28be776d71
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "cpf": "090.879.380-47",
+    "email": "teste@email.com",
+    "name": "bruno"
+  }
+}

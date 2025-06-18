@@ -1,0 +1,24 @@
+meta {
+  name: Get statements
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8080/wallets/db1d7192-4314-4b37-90b7-f608c801b04b/statements?page=3&pageSize=1
+  body: json
+  auth: none
+}
+
+query {
+  page: 3
+  pageSize: 1
+}
+
+body:json {
+  {
+    "sender": "db1d7192-4314-4b37-90b7-f608c801b04b",
+    "receiver": "9e0cb2c1-a63d-485a-b0e7-3a9938fa52d9",
+    "value": 5999
+  }
+}
